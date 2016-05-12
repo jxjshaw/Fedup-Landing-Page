@@ -1,0 +1,826 @@
+/*!
+ * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* TO DO ---
+
+ 1. Organize image
+ - Common properties for slide height - one for each size
+ - Tailor each background image to given height
+ - Background images should be fixed and shrinking window should merely crop
+ 
+ 2. Device mockups
+ - Pad each column
+ - Look into carsl options (edyn as example)
+ -
+*/
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: friday13;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-family: source code pro;
+    opacity: 0.87;
+    font-size: 24px; 
+}
+
+h3 {
+    font-family: source code pro;
+    opacity: 0.87;
+    font-size: 36px; 
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: courier new;
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: courier new;
+    }
+}
+
+a {
+    color: #42dca3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #1d9b6c;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: source code pro;
+    letter-spacing: 4.5px;
+    background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/backgrounds/courtCompfullsizeNoisy.jpg) no-repeat bottom center scroll;
+    background-position: top;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+#about{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.6)), url(../img/strong.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -o-background-size: cover;
+}
+
+#built{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/backgrounds/officeCeiling.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+#secondFeature{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.6)), url(../img/strong.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -o-background-size: cover;
+}
+
+#story{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/backgrounds/officeFloor.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -o-background-size: cover;
+}
+.team{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/team.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+.team .team-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+.team .team-body .brand-heading {
+    font-size: 40px;
+}
+
+.team .team-body .team-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .team {
+        height: 100%;
+        padding: 0;
+    }
+
+    .team .team-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .team .team-body .team-text {
+        font-size: 26px;
+    }
+}
+
+
+
+
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+        /*use different image for smaller one max width 768 stuff*/
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+
+.download-section {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/backgrounds/officeFloorB.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+
+@media(min-width:767px) {
+    
+
+    .download-section {
+        padding: 100px 0;
+    }
+
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }
+}
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: source code pro;
+    letter-spacing: 2.5px;
+    font-weight: 100;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #FFFFFF;
+    color: #000;
+    background-color: #FFFFFF;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #FFFFFF;
+    outline: 0;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+/* temp bullshit */
+
+/*h2 {
+font-size: 14px;
+
+
+
+}*/
+
+/*img#macbook {
+    padding: 31px;
+}*/
+
+
+/*must change these with each media query later*/
+.row {
+    padding: 48x;
+}
+
+#macbook {
+    width: 800px;
+    z-index: 10;
+}
+
+
+
+@media(max-width:1199px) {
+   #macbook {
+    width: 600px;
+}
+}
+
+@media(max-width:767px) {
+    #macbook {
+    width: 400px;
+}
+
+}
+
+
+/* gif stuff */
+
+#macbookGif {
+
+    /*position: absolute;
+    top: 26px;
+    right: 366px;
+    width: 610px;
+    border: 0px solid #73AD21;*/
+    z-index: -1;
+    margin-bottom: -500px;
+    width: 610px;
+}
+
+@media(max-width:1199px) {
+   #macbookGif {
+    width: 458px;
+    margin-bottom: -380px;
+}
+}
+
+@media(max-width:767px) {
+    #macbookGif {
+    width: 305px;
+    margin-bottom: -262px;
+}
+
+}
+
+
+
+
+
+
+
+#secondFeature h2 {
+    text-align: center;
+   /* font-size: 21px;*/
+}
+
+#secondFeature p {
+    text-align: center;
+    /*font-size: 17px;*/
+}
+
+@media(min-width:768px) {
+   #secondFeature h2 {
+    text-align: left;
+}
+
+#secondFeature p {
+    text-align: left;
+}
+
+
+}
+
+#macbooksmall {
+padding-bottom: 36px;
+
+}
+
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0000) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0000) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0000) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+
+.carousel-indicators {
+  bottom:-50px;
+}
+
+
+/* form stuff */
+
+#signupButton {
+    margin: 3px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-bottom: 22px;
+    font-family: friday13;
+}
+
+#signupButton:hover,
+#signupButton:focus {
+    border: 1px solid #FFFFFF
+    outline: 0;
+    color: #FFFFFF;
+    background-color: transparent;
+
+            /*animation*/
+            -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+              -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+              animation: neon2 1.5s ease-in-out infinite alternate;
+            }
+
+            @-webkit-keyframes neon2 {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+              }
+              to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+              }
+            }
+
+             from {
+                border-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+              }
+              to {
+                border-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+              }
+            }
+            @-moz-keyframes neon2 {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+              }
+              to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+              }
+            }
+
+
+            @keyframes neon2 {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+              }
+              to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+              }
+            }
+
+
+
+.form-control {
+    font-family: courier;
+
+}
+
+input {
+
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+
+
+/* device feature paragraph */
+
+.specBlurb {
+    margin-top: 160px;
+}
+
+@media(max-width:767px) {
+    .specBlurb {
+    margin-top: 0px;
+}
+
+}
+
+
+* {
+        border: 1px solid rgba(255, 0, 0, 0.2);
+
+}
+
+
+.btn-default {
+    border: 1px solid #FFFFFF;
+    color: #000;
+    background-color: #FFFFFF;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #FFFFFF;
+    outline: 0;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+#introButton {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+#introButton:hover,
+#introButton:focus {
+    border: 1px solid #FFFFFF;
+    outline: 0;
+    color: #00FFFF;
+    background-color: transparent;
+}
+
+/* typography */
+
+/* Font Faces */
+@font-face {
+     font-family: 'courier new';
+     src: url('../fonts/Courier New.ttf');
+ }
+
+ @font-face {
+     font-family: 'friday13';
+     src: url('../fonts/Friday13v12.ttf');
+ }
+
+  @font-face {
+     font-family: 'source code pro';
+     src: url('../fonts/SourceCodePro-ExtraLight.ttf');
+ }
+ 
+ 
+span.glyphicon.glyphicon-chevron-right{
+
+    opacity: 0.3;
+}
+
+span.glyphicon.glyphicon-chevron-right:hover{
+    opacity: 0.8;
+    color: #00FFFF;
+}
+
+span.glyphicon.glyphicon-chevron-left {
+    opacity: 0.3;
+}
+span.glyphicon.glyphicon-chevron-left:hover{
+    opacity: 0.8;
+    color: #00FFFF;
+}
+
+.carousel-indicators li {
+    opacity: 0.3;
+}
+
+#ctaRow {
+    margin-bottom: 20px;
+}
+
